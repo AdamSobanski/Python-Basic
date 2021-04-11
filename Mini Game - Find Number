@@ -1,0 +1,15 @@
+from random import randint
+
+los = randint(1, 10)
+odp = -1
+i = 0
+print('Discover number form range 1-10')
+
+while odp != los:
+    i += 1
+    odp = int(input('Put number: '))
+    if odp > los:
+        print('Unfortunatelly random number is smaller than your')
+    if odp < los:
+        print('Unfortunatelly random number is bigger than your')
+print('Brawo you found number in', i, "time"
