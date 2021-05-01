@@ -1,0 +1,18 @@
+# Wyrazenia listowe
+lista = list(range(10)) # Lista z zakresu 1 - 10
+lista2 = [i * 2 for i in lista] # Monożenie każdego argumentu razy 2
+lista3 = [i + 1 for i in lista if i%2 == 0] # Dodanie argumentu gdy reszta z dzielenia przez 2 jest 1
+print(lista)
+print('Lista mnożona razy 2: ', lista2)
+print('Lista dodawana plus 1: ', lista3)
+
+# Formatowanie ciąg znaków String pozwala pisać tekst i wstawiać tane z tablicy :)
+
+dane = ["Adam", 39, 'BB']
+dane2 = ['Anna', 'Ariadna', "Akadia", 'Lucyfer']
+opis = 'Cześć, mam na imę {0}, mam {1} i jestem {2}.'.format(dane[0], dane[1], dane[2])
+opis3 = 'Cześć, mam na imę {imię}, mam {wiek} i jestem {zawód}.'.format(imię = dane[:], wiek = dane[1], zawód = dane[2]) # Kombinacje z zawartością
+opis2 = 'Jestem żonaty z {0}, mam dwie córeczki {1} i {2} w naszym domu jest również kot {3}.'.format(dane2[0], dane2[1], dane2[2], dane2[3])
+print(opis)
+print(opis2)
+print(opis3)
